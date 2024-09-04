@@ -1,117 +1,228 @@
-<!-- 
+import React from "https://esm.sh/react";
+import ReactDOM from "https://esm.sh/react-dom";
+import Button from "https://esm.sh/react-bootstrap/Button";
 
-Hello Camper!
 
-Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+// !! IMPORTANT README:
 
-- The freeCodeCamp Team 
+// You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place. 
 
--->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
- <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+/***********
+INSTRUCTIONS:
+  - Select the project you would 
+    like to complete from the dropdown 
+    menu.
+  - Click the "RUN TESTS" button to
+    run the tests against the blank 
+    pen.
+  - Click the "TESTS" button to see 
+    the individual test cases. 
+    (should all be failing at first)
+  - Start coding! As you fulfill each
+    test case, you will see them go   
+    from red to green.
+  - As you start to build out your 
+    project, when tests are failing, 
+    you should get helpful errors 
+    along the way!
+    ************/
+
+// PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
+
+// Once you have read the above messages, you can delete all comments. 
+
+$(document).ready(function() {
+  $("#Q").click(function() {
+    $( "#Q" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-1.mp3';
+    audio.play();
     
-
+  });
+  
+   $("#W").click(function() {
+    $( "#W" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-2.mp3';
+    audio.play();
     
-  </head>
-  <body id="grad">
-    <header id="header">
-      </header>
-        <main>
-         <br>
-          <div id="title">
-            <br>
-            <br>
-            <p><b>Drum Machine</b></p>
-          </div>
-          <br>
-          <hr class="new3">
-          <br>
-          <div id="drum-machine">
-            <table class="buttons">
-              <tr>
-                <td>
-            <button type="button" id="Q" class="btn btn-warning drum-pad">Q</button>
-                </td>
-             <td>
-            <button type="button" id="W" class="btn btn-warning drum-pad">W</button>
-                </td>
-               <td>
-            <button type="button" id="E" class="btn btn-warning drum-pad">E</button>
-                </td>
-                <tr><td>
-            <button type="button" id="A" class="btn btn-warning drum-pad">A</button>
-                  </td>
-                  <td>
-            <button type="button" id="S" class="btn btn-warning drum-pad">S</button>
-                  </td>
-                  <td>
-            <button type="button" id="D" class="btn btn-warning drum-pad">D</button>
-                  </td>
-              </tr>
-              <tr><td>
-            <button type="button" id="Z" class="btn btn-warning drum-pad">Z</button>
-                </td>
-                <td>
-                  <button type="button" id="X" class="btn btn-warning drum-pad">X</button>  </td>
-                <td>
-                  <button type="button" id="C" class="btn btn-warning drum-pad">C</button> </td></tr>                   
-            </table>
-            <div id="display">
-          </div>
-            <div>
-              
-            </div>
-          </div>        
-          
-  <footer ip{
-  font-family: 'Catamaran', sans-serif;
-}d="footer">
-    <p><i>Author: Frank Ovanessians</i></p>
-  </footer>        
-
-    </main>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  });
+  
+   $("#E").click(function() {
+    $( "#E" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3';
+    audio.play();
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  });
+  
+     $("#A").click(function() {
+    $( "#A" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-4_1.mp3';
+    audio.play();
+    
+  });
+  
+   $("#S").click(function() {
+    $( "#S" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-6.mp3';
+    audio.play();
+  });
+  
+    $("#D").click(function() {
+    $( "#D" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Dsc_Oh.mp3';
+    audio.play();
+  });
+  
+      $("#Z").click(function() {
+    $( "#Z" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Kick_n_Hat.mp3';
+    audio.play();
+  });
+  
+        $("#X").click(function() {
+    $( "#X" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/RP4_KICK_1.mp3';
+    audio.play();
+  });
+  
+   $("#C").click(function() {
+    $( "#C" ).animate({opacity: "0.2"}).delay(1500).animate({opacity: "1.0"});
+    const audio = document.createElement('audio');
+    audio.src = 'https://cdn.freecodecamp.org/testable-projects-fcc/audio/Cev_H2.mp3';
+    audio.play();
+  });
  
-    <br>
-    <hr class="new3">
-    <br>
-    <div class="varButton">
+});
 
-    </div>
+
+//****************************************
+//React Toggle information
+//****************************************
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visibility: false
+    };
+    // Change code below this line
+    this.toggleVisibility = this.toggleVisibility.bind(this)
+    // Change code above this line
+  }
+  // Change code below this line
+    toggleVisibility() {
+    this.setState(state => {
+      if (state.visibility === true) {
+         return { visibility: false };
+       } else {
+         return { visibility: true };
+      }
+    });
+  }
+
+
+  // Change code above this line
+  render() {
+    if (this.state.visibility) {
+      return (
+        <div>{/* console.log(this.state.visibility) */}
+        
+          <Button variant="info" onClick={this.toggleVisibility}>Click Me</Button>{' '}
+ 
+          <br/><h1><b>Now you see me!</b></h1>
+        </div>
+      );
+    } else {
+      return (
+        <div>{/* console.log(this.state.visibility) */}
+          <Button variant="info" onClick={this.toggleVisibility}>Click Me</Button>{' '}
+        </div>
+        
+      );
+    }
+  }
+}
+
+ReactDOM.render(<App/>, document.getElementById("app"));
+
+
+//********************************************
+
+/* rendering toggle and info */
+
+//********************************************
+
+class ToggleApp extends React.Component {
+  constructor(props) {
+    super(props);
+       this.state = {
+        name: '',
+        isChecked: false
+    };
+     this.toggleInfo = this.toggleInfo.bind(this)
+     this.handleChecked = this.handleChecked.bind(this);
+  }
     
-         <div class="toggle">
-           <button type="button" class="btn btn-outline-info" onClick={this.toggleInfo}>Info</button>
-           
-          <label class="switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-            </label>
-         </div>
-    <div id="app"></div>
-      <br>
-    <hr class="new3">
-    
-    <br>
-    <div id="root"></div>
-    <div id="toggle"></div>
-    
-    
-<details class="rSummaryDetails margin-t-3">
-  <summary>System Requirements</summary>
-  <p>
-    <b>Requires a computer running an operating system. The computer must have some
-    memory and ideally some kind of long-term storage. An input device as well
-      as some form of output device is recommended.</b>
-  </p>
-</details>
-</body>
-</html>
+   handleChecked () {
+    console.log('in box: ' + this.state.isChecked);
+     this.setState({
+      isChecked: !this.state.isChecked 
+    });
+    console.log('in box: ' + this.state.isChecked);
+  }
+  toggleInfo() {
+
+        if (this.state.isChecked === false) {
+          this.setState({
+            name: 'Quote 1'
+          })
+        } else {
+          this.setState({
+            name: 'Quote 2'
+          })
+        }
+        console.log('is check: ' + this.state.isChecked);
+        console.log('ToggleApp component: ' + this.state.name);
+        return this.state.name
+    };
+  
+  render() {
+          let txt;
+    if (this.state.isChecked === true) {
+      txt = 'checked';
+     
+      //console.log(this.state.name)
+      
+    } else {
+      txt = 'unchecked';
+     
+      //console.log(this.state.name)
+    }
+      return (
+              <div>
+       <input type="checkbox" onChange={ this.handleChecked }/>
+      <p>This box is {txt}</p>
+      <p>{/* this.state.name*/}</p>
+
+          <button type="button" onClick={this.toggleInfo}>Info</button>
+          <h1>{this.state.name}</h1>
+          
+        </div>
+        
+      );    
+    }
+  };
+
+
+ReactDOM.render(
+  <ToggleApp/>,
+  document.getElementById('root')
+);
+
